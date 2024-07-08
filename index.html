@@ -10,8 +10,31 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">  
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="./css/css1.css">
+
+
+
 </head>
 <body>
+    <script>
+        const emojis = ['❤️', '🎂'];
+        const body = document.body;
+
+        function createEmoji() {
+            const emoji = document.createElement('div');
+            emoji.classList.add('emoji');
+            emoji.style.left = `${Math.random() * 100}vw`;
+            emoji.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            body.appendChild(emoji);
+
+            // Remove the emoji after the animation ends
+            emoji.addEventListener('animationend', () => {
+                emoji.remove();
+            });
+        }
+
+        setInterval(createEmoji, 300);
+    </script>
     <img src="./img/1.png" width="100%">
 
     <h1>Dear 毛雨欣小朋友</h1>
