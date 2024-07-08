@@ -17,6 +17,6 @@ footer {
 }
 @keyframes fall {
     to {
-        transform: translateY(110vh); /* Move to below the bottom of the screen */
+        transform: translateY(300vh); 
     }
 }

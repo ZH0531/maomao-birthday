@@ -23,7 +23,7 @@
             const emoji = document.createElement('div');
             emoji.classList.add('emoji');
             emoji.style.left = `${Math.random() * 100}vw`;
-            emoji.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            emoji.style.animationDuration = `${Math.random() * 5 + 5}s`; /* Adjust duration for slower fall */
             emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
             body.appendChild(emoji);
 
