@@ -18,6 +18,27 @@ footer {
 }
 @keyframes fall {
     to {
-        transform: translateY(300vh); 
+        transform: translateY(150vh); /* Move to below the bottom of the screen */
+    }
+}
+.floating-emoji {
+    position: absolute;
+    font-size: 2em;
+    animation: float-up 2s ease-out forwards, fade-out 2s ease-out forwards;
+}
+@keyframes float-up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px); /* Move up */
+    }
+}
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0; /* Fade out */
     }
 }
