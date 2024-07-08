@@ -1,2 +1,2 @@
-# maomao-s-birthday
-maomao 专属
+# maomao-birthday
+此项目用来写给女朋友生日专用！！！
