@@ -1,6 +1,7 @@
 body{
     background-color: #f3eaed;
     font-family: 微软雅黑;
+    
 }
 footer {
     background-color: #333;
@@ -9,6 +10,36 @@ footer {
     padding: 5px 0;
     font-size: 10px;
 }
+h1{
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .emoji {
     position: absolute;
