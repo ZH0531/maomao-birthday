@@ -23,24 +23,52 @@ div{
     text-align: right;
     display: block;
 }
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('../font/bahnschrift.ttf') format('truetype');
+    font-display: swap;
+}
 
-.ziti{
-    font-family: Bahnschrift;
-    src: url(../font/bahnschrift.ttf) format('truetype');
+@font-face {
+    font-family: '华文中宋';
+    src: url('../font/华文中宋.ttf') format('truetype');
+    font-display: swap;
 }
-.ziti2{
-    font-family: 华文中宋;
-    src: url(../font/华文中宋.ttf) format('truetype');
-}
-.ziti3{
-    font-family: Lucida Handwriting;
-    src: url(../font/lucida-handwrit.ttf) format('truetype');
-}
-.ziti4{
-    font-family: 幼圆;
-    src: url(../font/幼圆字体.TTF) format('truetype');
 
+@font-face {
+    font-family: 'Lucida Handwriting';
+    src: url('../font/lucida-handwrit.ttf') format('truetype');
+    font-display: swap;
 }
+
+@font-face {
+    font-family: '幼圆';
+    src: url('../font/幼圆字体.TTF') format('truetype');
+    font-display: swap;
+}
+
+.ziti {
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+.ziti2 {
+    font-family: '华文中宋', sans-serif;
+}
+
+.ziti3 {
+    font-family: 'Lucida Handwriting', sans-serif;
+}
+
+.ziti4 {
+    font-family: '幼圆', sans-serif;
+}
+
+
+
+
+
+
+
 
 p{
     display: block;
