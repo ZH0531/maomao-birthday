@@ -15,7 +15,7 @@
 
 </head>
 <body>
-    <script>
+    <!-- <script>
         const emojis = ['❤️', '🎂'];
         const body = document.body;
 
@@ -61,19 +61,72 @@
             const y = event.clientY + window.scrollY; // Adjust for vertical scroll
             createFloatingEmoji(x, y);
         });
+    </script> -->
+
+    <script>
+        const emojis = ['❤️', '🎂'];
+        const body = document.body;
+
+        function createFallingEmoji() {
+            const emoji = document.createElement('div');
+            emoji.classList.add('emoji');
+            emoji.style.left = `${Math.random() * 100}vw`;
+            emoji.style.animationDuration = `${Math.random() * 10 + 10}s`; /* Adjust duration for slower fall */
+            emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            body.appendChild(emoji);
+
+            // Remove the emoji after the animation ends
+            emoji.addEventListener('animationend', () => {
+                emoji.remove();
+            });
+        }
+
+        function createFloatingEmoji(x, y) {
+            const emoji = document.createElement('div');
+            emoji.classList.add('floating-emoji');
+            emoji.style.left = `${x}px`;
+            emoji.style.top = `${y}px`;
+            emoji.textContent = '❤️';
+            body.appendChild(emoji);
+
+            // Remove the emoji after the animation ends
+            emoji.addEventListener('animationend', () => {
+                emoji.remove();
+            });
+        }
+
+        // Create initial falling emojis
+        for (let i = 0; i < 10; i++) { // Adjust the initial number if needed
+            createFallingEmoji();
+        }
+
+        // Continuously create new falling emojis
+        setInterval(createFallingEmoji, 1000); // Adjust interval to control the frequency
+
+        // Create floating emoji on mouse click
+        body.addEventListener('click', (event) => {
+            const x = event.clientX + window.scrollX; // Adjust for horizontal scroll
+            const y = event.clientY + window.scrollY; // Adjust for vertical scroll
+            createFloatingEmoji(x, y);
+        });
     </script>
 
-
-
     <img src="./img/1.png" width="100%">
+    <div style="background: url(./img/3.png); background-size: auto; background-size: 100%;">
+        <h2><font class="ziti3">Dear</font><font class="ziti4"> 毛雨欣小朋友:</font> </h1>
+        <p class="ziti2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;见字如晤，展信舒颜。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天是乖乖的<font class="ziti"> 17 </font>岁生日！生日快乐呀宝贝，很开心可以和乖乖一起过生日，陪乖乖长大！不知不觉我们已经在一起<font class="ziti"> 66 </font>天啦！听起来好像也没多久是不是！那么换一种说法好不好呀，不知不觉我们已经在一起<font class="ziti"> 1584 </font>个小时，<font class="ziti">95040 </font>分钟，大约<font class="ziti"> 5700000 </font>秒啦！嘿嘿，是不是已经陪伴彼此很久了呀~</p> 
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;和乖乖在一起的这两个多月里，我们虽然距离遥远，但都有一颗向往彼此的心！我们一起开心过，感动过，也一起哭过，闹过，但是最后都会开开心心的！乖乖呢~真的是一个很好的女孩子呀，在我不开心的时候会安慰我，理解我，和我共情；在我受伤的时候会关心我，照顾我，在心里疼爱我；在我做错事的时候也会很耐心的去教导我，包容我！所以乖乖真的是一个很好的女孩子哇！我超喜欢的！！！</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="ziti2">情长纸短，吻你万千。我们来日方长！</font>（太高冷了有点不符合我的风格，我觉得我应该疯狂亲亲！！！）</p>
+        <h3 class="right">—— 最爱你的涵涵</h3>
+        <p class="right">2024.7.30</p>
+    </div>
 
-    <h1>Dear 毛雨欣小朋友:</h1>
 
     <img src="./img/2.png" width="100%">
 
     <footer>
-        <p>&copy; 2023-2024 | 备案号：<a href="https://beian.miit.gov.cn/" target="_blank" style="color: white;" title="点击跳转ICP/IP地址/域名信息备案管理系统
-            " >鄂ICP备2023022652号-1</a> &nbsp; | &nbsp; MaoYuxin HAPPY BIRTHDAY &nbsp; | &nbsp;  ZH LOVE YOU</p>
+        <p>&copy; 2023-2024 | 备案号：<a href="https://beian.miit.gov.cn/" target="_blank" style="color: white;" title="点击跳转ICP/IP地址/域名信息备案管理系统" >鄂ICP备2023022652号-1</a> &nbsp; | &nbsp; MaoYuxin HAPPY BIRTHDAY &nbsp; | &nbsp;  ZH LOVE YOU</p>
     </footer>
 </body>
 </html>

@@ -10,24 +10,31 @@ footer {
     padding: 5px 0;
     font-size: 10px;
 }
-h1{
+h1,h2,h3{
     color: #333;
 }
 
+div{
+    margin: 0;
+    padding: 30px;
+}
 
+.right{
+    text-align: right;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.ziti{
+    font-family: Bahnschrift;
+}
+.ziti2{
+    font-family: 华文中宋;
+}
+.ziti3{
+    font-family: Lucida Handwriting;
+}
+.ziti4{
+    font-family: 幼圆;
+}
 
 
 
@@ -45,7 +52,7 @@ h1{
     position: absolute;
     top: -50px; /* Start above the top of the screen */
     font-size: 2em;
-    animation: fall linear infinite;
+    animation: fall linear forwards;
 }
 @keyframes fall {
     to {
@@ -73,3 +80,55 @@ h1{
         opacity: 0; /* Fade out */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.emoji {
+    position: absolute;
+    top: -50px;
+    font-size: 2em;
+    animation: fall linear infinite;
+}
+@keyframes fall {
+    to {
+        transform: translateY(150vh); 
+    }
+}
+.floating-emoji {
+    position: absolute;
+    font-size: 2em;
+    animation: float-up 2s ease-out forwards, fade-out 2s ease-out forwards;
+}
+@keyframes float-up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px); 
+    }
+}
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0; 
+    }
+} */
