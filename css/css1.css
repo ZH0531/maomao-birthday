@@ -2,6 +2,13 @@ body{
     background-color: #f3eaed;
     font-family: 微软雅黑;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
 footer {
     background-color: #333;
     color: white;
@@ -37,7 +44,7 @@ div{
 
 @font-face {
     font-family: 'Lucida Handwriting';
-    src: url('../font/lucida-handwrit.ttf') format('truetype');
+    src: url('../font/Lucida\ Handwriting\ Italic.ttf') format('truetype');
     font-display: swap;
 }
 
@@ -79,13 +86,14 @@ p{
 
 
 
-
 .emoji {
     position: absolute;
-    top: -50px; /* Start above the top of the screen */
+    will-change: transform;
+    top: -50px; 
     font-size: 2em;
     animation: fall linear forwards;
 }
+
 @keyframes fall {
     0% {
         transform: translateY(0);
@@ -95,52 +103,35 @@ p{
         opacity: 1;
     }
     100% {
-        transform: translateY(150vh); /* Move to below the bottom of the screen */
-        opacity: 0; /* Fade out */
+        transform: translateY(150vh); 
+        opacity: 0; 
     }
 }
+
 .floating-emoji {
     position: absolute;
     font-size: 2em;
+    transform: translate(-50%, -50%);
     animation: float-up 2s ease-out forwards, fade-out 2s ease-out forwards;
 }
+
 @keyframes float-up {
     0% {
-        transform: translateY(0);
+        transform: translate(-50%, -50%);
     }
     100% {
-        transform: translateY(-100px); /* Move up */
+        transform: translate(-50%, -150px); 
     }
 }
+
 @keyframes fade-out {
     0% {
         opacity: 1;
     }
     100% {
-        opacity: 0; /* Fade out */
+        opacity: 0; 
     }
 }
-
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 2s forwards; /* 2s is the duration of the animation */
-}
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
 
 
 

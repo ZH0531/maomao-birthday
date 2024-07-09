@@ -15,54 +15,6 @@
 
 </head>
 <body class="fade-in">
-    <!-- <script>
-        const emojis = ['❤️', '🎂'];
-        const body = document.body;
-
-        function createFallingEmoji() {
-            const emoji = document.createElement('div');
-            emoji.classList.add('emoji');
-            emoji.style.left = `${Math.random() * 100}vw`;
-            emoji.style.animationDuration = `${Math.random() * 10 + 10}s`; /* Adjust duration for slower fall */
-            emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-            body.appendChild(emoji);
-
-            // Remove the emoji after the animation ends
-            emoji.addEventListener('animationend', () => {
-                emoji.remove();
-            });
-        }
-
-        function createFloatingEmoji(x, y) {
-            const emoji = document.createElement('div');
-            emoji.classList.add('floating-emoji');
-            emoji.style.left = `${x}px`;
-            emoji.style.top = `${y}px`;
-            emoji.textContent = '❤️';
-            body.appendChild(emoji);
-
-            // Remove the emoji after the animation ends
-            emoji.addEventListener('animationend', () => {
-                emoji.remove();
-            });
-        }
-
-        // Create initial falling emojis
-        for (let i = 0; i < 20; i++) {
-            createFallingEmoji();
-        }
-
-        // Continuously create new falling emojis
-        setInterval(createFallingEmoji, 1000);
-
-        // Create floating emoji on mouse click
-        body.addEventListener('click', (event) => {
-            const x = event.clientX + window.scrollX; // Adjust for horizontal scroll
-            const y = event.clientY + window.scrollY; // Adjust for vertical scroll
-            createFloatingEmoji(x, y);
-        });
-    </script> -->
-
     <script>
         const emojis = ['❤️', '🎂'];
         const body = document.body;
@@ -71,7 +23,7 @@
             const emoji = document.createElement('div');
             emoji.classList.add('emoji');
             emoji.style.left = `${Math.random() * 100}vw`;
-            emoji.style.animationDuration = `${Math.random() * 10 + 10}s`; /* Adjust duration for slower fall */
+            emoji.style.animationDuration = `${Math.random() * 10 + 10}s`; // Adjust duration for slower fall
             emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
             body.appendChild(emoji);
 
