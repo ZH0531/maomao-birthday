@@ -47,10 +47,6 @@ p{
 
 
 
-
-
-
-
 .emoji {
     position: absolute;
     top: -50px; /* Start above the top of the screen */
@@ -58,8 +54,16 @@ p{
     animation: fall linear forwards;
 }
 @keyframes fall {
-    to {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
         transform: translateY(150vh); /* Move to below the bottom of the screen */
+        opacity: 0; /* Fade out */
     }
 }
 .floating-emoji {
@@ -84,9 +88,16 @@ p{
     }
 }
 
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* 2s is the duration of the animation */
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 
-
-
+}
 
 
 
