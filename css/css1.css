@@ -1,7 +1,6 @@
 body{
     background-color: #f3eaed;
     font-family: 微软雅黑;
-    
 }
 footer {
     background-color: #333;
@@ -17,6 +16,7 @@ h1,h2,h3{
 div{
     margin: 0;
     padding: 30px;
+    position: relative;
 }
 
 .right{
@@ -37,7 +37,9 @@ div{
     font-family: 幼圆;
 }
 
-
+p{
+    display: block;
+}
 
 
 
