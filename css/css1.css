@@ -1,110 +1,121 @@
-body{
-    background-color: #f3eaed;
-    font-family: 微软雅黑;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    width: 100%;
-}
-
-
-
+/* 设置 body 元素的背景颜色和字体 */
 body {
-    position: relative;
-    min-height: 100vh;
-    max-width: 100%;
-
+    background-color: #f3eaed; /* 背景颜色 */
+    font-family: 微软雅黑; /* 字体 */
 }
 
+/* 设置 html 和 body 元素的默认样式 */
+html, body {
+    margin: 0; /* 去除默认外边距 */
+    padding: 0; /* 去除默认内边距 */
+    overflow-x: hidden; /* 禁止水平滚动 */
+    width: 100%; /* 宽度设置为 100% */
+}
+
+/* 设置 body 元素的相对位置和最小高度 */
+body {
+    position: relative; /* 相对定位 */
+    min-height: 100vh; /* 最小高度为视口高度 */
+    max-width: 100%; /* 最大宽度为 100% */
+}
+
+/* 设置 footer 元素的样式 */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 5px 0;
-    font-size: 10px;
-    max-width: 100%;
-
-}
-h1,h2,h3{
-    color: #333;
+    background-color: #333; /* 背景颜色 */
+    color: white; /* 字体颜色 */
+    text-align: center; /* 文字居中对齐 */
+    padding: 5px 0; /* 内边距 */
+    font-size: 10px; /* 字体大小 */
+    max-width: 100%; /* 最大宽度为 100% */
 }
 
-div{
-    margin: 0;
-    padding: 30px;
-    position: relative;
-    max-width: 100%;
+/* 设置 h1, h2, h3 元素的字体颜色 */
+h1, h2, h3 {
+    color: #333; /* 字体颜色 */
 }
 
-.right{
-    text-align: right;
-    display: block;
+/* 设置 div 元素的默认样式 */
+div {
+    margin: 0; /* 外边距为 0 */
+    padding: 30px; /* 内边距为 30px */
+    position: relative; /* 相对定位 */
+    max-width: 100%; /* 最大宽度为 100% */
 }
+
+/* 设置 .right 类的样式 */
+.right {
+    text-align: right; /* 文字右对齐 */
+    display: block; /* 块级元素 */
+}
+
+/* 定义自定义字体 'Bahnschrift' */
 @font-face {
-    font-family: 'Bahnschrift';
-    src: url('../font/bahnschrift.ttf') format('truetype');
-    font-display: swap;
+    font-family: 'Bahnschrift'; /* 字体名称 */
+    src: url('../font/bahnschrift.ttf') format('truetype'); /* 字体文件路径 */
+    font-display: swap; /* 字体显示策略 */
 }
 
+/* 定义自定义字体 '华文中宋' */
 @font-face {
-    font-family: '华文中宋';
-    src: url('../font/华文中宋.ttf') format('truetype');
-    font-display: swap;
+    font-family: '华文中宋'; /* 字体名称 */
+    src: url('../font/华文中宋.ttf') format('truetype'); /* 字体文件路径 */
+    font-display: swap; /* 字体显示策略 */
 }
 
+/* 定义自定义字体 'Lucida Handwriting' */
 @font-face {
-    font-family: 'Lucida Handwriting';
-    src: url('../font/Lucida\ Handwriting\ Italic.ttf') format('truetype');
-    font-display: swap;
+    font-family: 'Lucida Handwriting'; /* 字体名称 */
+    src: url('../font/Lucida\ Handwriting\ Italic.ttf') format('truetype'); /* 字体文件路径 */
+    font-display: swap; /* 字体显示策略 */
 }
 
+/* 定义自定义字体 '幼圆' */
 @font-face {
-    font-family: '幼圆';
-    src: url('../font/幼圆字体.TTF') format('truetype');
-    font-display: swap;
+    font-family: '幼圆'; /* 字体名称 */
+    src: url('../font/幼圆字体.TTF') format('truetype'); /* 字体文件路径 */
+    font-display: swap; /* 字体显示策略 */
 }
 
+/* 设置 .ziti 类的字体 */
 .ziti {
-    font-family: 'Bahnschrift', sans-serif;
+    font-family: 'Bahnschrift', sans-serif; /* 优先使用 'Bahnschrift' 字体 */
 }
 
+/* 设置 .ziti2 类的字体 */
 .ziti2 {
-    font-family: '华文中宋', sans-serif;
+    font-family: '华文中宋', sans-serif; /* 优先使用 '华文中宋' 字体 */
 }
 
+/* 设置 .ziti3 类的字体 */
 .ziti3 {
-    font-family: 'Lucida Handwriting', sans-serif;
+    font-family: 'Lucida Handwriting', sans-serif; /* 优先使用 'Lucida Handwriting' 字体 */
 }
 
+/* 设置 .ziti4 类的字体 */
 .ziti4 {
-    font-family: '幼圆', sans-serif;
+    font-family: '幼圆', sans-serif; /* 优先使用 '幼圆' 字体 */
 }
 
-p{
-    display: block;
+/* 设置 p 元素的显示方式 */
+p {
+    display: block; /* 块级元素 */
 }
-
-
-
 
 /* 全局样式 */
 * {
-    box-sizing: border-box;
-
+    box-sizing: border-box; /* 设置盒模型为 border-box */
 }
 
-
+/* 设置 .emoji 类的样式 */
 .emoji {
-    position: absolute;
-    will-change: transform;
-    top: -50px;
-    font-size: 2em;
-    animation: fall linear forwards;
+    position: absolute; /* 绝对定位 */
+    will-change: transform; /* 优化动画性能 */
+    top: -50px; /* 初始位置 */
+    font-size: 2em; /* 字体大小 */
+    animation: fall linear forwards; /* 下落动画 */
 }
 
+/* 定义下落动画 */
 @keyframes fall {
     0% {
         transform: translateY(0);
@@ -119,13 +130,15 @@ p{
     }
 }
 
+/* 设置 .floating-emoji 类的样式 */
 .floating-emoji {
-    position: absolute;
-    font-size: 2em;
-    transform: translate(-50%, -50%);
-    animation: float-up 2s ease-out forwards, fade-out 2s ease-out forwards;
+    position: absolute; /* 绝对定位 */
+    font-size: 2em; /* 字体大小 */
+    transform: translate(-50%, -50%); /* 初始位置 */
+    animation: float-up 2s ease-out forwards, fade-out 2s ease-out forwards; /* 上浮和淡出动画 */
 }
 
+/* 定义上浮动画 */
 @keyframes float-up {
     0% {
         transform: translate(-50%, -50%);
@@ -135,6 +148,7 @@ p{
     }
 }
 
+/* 定义淡出动画 */
 @keyframes fade-out {
     0% {
         opacity: 1;
@@ -146,10 +160,11 @@ p{
 
 /* 淡入动画 */
 .fade-in {
-opacity: 0;
-animation: fadeIn 2s forwards;
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* 淡入动画 */
 }
 
+/* 定义淡入动画 */
 @keyframes fadeIn {
     to {
         opacity: 1;

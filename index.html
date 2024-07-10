@@ -4,68 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>毛雨欣 Happy Birthday </title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">  
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="./css/css1.css">
-
-
-
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/> <!-- 网站图标 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> <!-- 苹果设备图标 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> <!-- 32x32 图标 -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <!-- 16x16 图标 -->
+    <link rel="manifest" href="/site.webmanifest"> <!-- 网站清单 -->
+    <link rel="stylesheet" href="./css/css1.css"> <!-- 引入CSS文件 -->
 </head>
-<body class="fade-in">
+<body class="fade-in"> <!-- 淡入动画 -->
+
     <script>
-        const emojis = ['❤️', '🎂'];
+        const emojis = ['❤️', '🎂']; // 定义emoji数组
         const body = document.body;
 
+        // 创建掉落的emoji
         function createFallingEmoji() {
             const emoji = document.createElement('div');
             emoji.classList.add('emoji');
-            emoji.style.left = `${Math.random() * 100}vw`;
-            emoji.style.animationDuration = `${Math.random() * 10 + 10}s`; // Adjust duration for slower fall
+            emoji.style.left = `${Math.random() * 100}vw`; // 随机水平位置
+            emoji.style.animationDuration = `${Math.random() * 10 + 10}s`; // 随机动画时长
             emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
             body.appendChild(emoji);
 
-            // Remove the emoji after the animation ends
+            // 动画结束后移除emoji
             emoji.addEventListener('animationend', () => {
                 emoji.remove();
             });
         }
 
+        // 创建浮动的emoji
         function createFloatingEmoji(x, y) {
             const emoji = document.createElement('div');
             emoji.classList.add('floating-emoji');
-            emoji.style.left = `${x}px`;
-            emoji.style.top = `${y}px`;
+            emoji.style.left = `${x}px`; // 设置水平位置
+            emoji.style.top = `${y}px`; // 设置垂直位置
             emoji.textContent = '❤️';
             body.appendChild(emoji);
 
-            // Remove the emoji after the animation ends
+            // 动画结束后移除emoji
             emoji.addEventListener('animationend', () => {
                 emoji.remove();
             });
         }
 
-        // Create initial falling emojis
-        for (let i = 0; i < 10; i++) { // Adjust the initial number if needed
+        // 创建初始掉落的emoji
+        for (let i = 0; i < 10; i++) {
             createFallingEmoji();
         }
 
-        // Continuously create new falling emojis
-        setInterval(createFallingEmoji, 1000); // Adjust interval to control the frequency
+        // 持续创建新的掉落emoji
+        setInterval(createFallingEmoji, 1000); // 每秒创建一个新的掉落emoji
 
-        // Create floating emoji on mouse click
+        // 点击鼠标时创建浮动的emoji
         body.addEventListener('click', (event) => {
-            const x = event.clientX + window.scrollX; // Adjust for horizontal scroll
-            const y = event.clientY + window.scrollY; // Adjust for vertical scroll
+            const x = event.clientX + window.scrollX; // 调整水平滚动
+            const y = event.clientY + window.scrollY; // 调整垂直滚动
             createFloatingEmoji(x, y);
         });
     </script>
 
-    <img src="./img/1.png" width="100%">
-    <div style="background: url(./img/3.png); background-size: auto; background-size: 100%;" class="fade-in">
-        <h2><font class="ziti3">Dear</font><font class="ziti4"> 毛雨欣小朋友:</font> </h1>
+    <img src="./img/1.png" width="100%"> <!-- 显示图片1 -->
+    <div style="background: url(./img/3.png); background-size: auto; background-size: 100%;" class="fade-in"> <!-- 淡入动画 -->
+        <h2><font class="ziti3">Dear</font><font class="ziti4"> 毛雨欣小朋友:</font></h2> <!-- 标题 -->
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;见字如晤，展信舒颜。</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天是乖乖的<font class="ziti"> 17 </font>岁生日！生日快乐呀宝贝，很开心可以和乖乖一起过生日，陪乖乖长大！不知不觉我们已经在一起<font class="ziti"> 66 </font>天啦！听起来好像不算太久对吧？那么换一种说法好不好呀，不知不觉我们已经在一起<font class="ziti"> 1584 </font>个小时，<font class="ziti">95040 </font>分钟，大约<font class="ziti"> 5700000 </font>秒啦！嘿嘿，是不是觉得已经陪伴彼此很久了呢？</p> 
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这两个多月的时间里，尽管我们相隔遥远，但我们都有一颗向往彼此的心！我们一起高兴过，感动过，也一起哭过，闹过，但是最后都会开开心心的！乖乖真的是一个非常好的女孩呀，在我不开心的时候会安慰我，理解我，和我共情；在我受伤的时候会关心我，照顾我，在心里疼爱我；在我做错事的时候也会耐心地教导我，包容我！所以乖乖真的是一个很好的女孩子哇！我超喜欢的！！！</p>
@@ -75,11 +75,10 @@
         <p class="right">2024.7.30</p>
     </div>
 
-
-    <img src="./img/2.png" width="100%">
+    <img src="./img/2.png" width="100%"> <!-- 显示图片2 -->
 
     <footer>
-        <p>&copy; 2023-2024 | 备案号：<a href="https://beian.miit.gov.cn/" target="_blank" style="color: white;" title="点击跳转ICP/IP地址/域名信息备案管理系统" >鄂ICP备2023022652号-1</a> &nbsp; | &nbsp; ZH LOVE MAOYUXIN </p>
+        <p>&copy; 2023-2024 | 备案号：<a href="https://beian.miit.gov.cn/" target="_blank" style="color: white;" title="点击跳转ICP/IP地址/域名信息备案管理系统">鄂ICP备2023022652号-1</a> &nbsp; | &nbsp; ZH LOVE MAOYUXIN </p> <!-- 页脚内容 -->
     </footer>
 </body>
 </html>
